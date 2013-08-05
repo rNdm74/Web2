@@ -6,33 +6,39 @@
 <title>BIT Meet</title>
 </head>
 <body>
-	<div class="form">
-		<form action='process.php' method='POST'>
-		<fieldset>
-		<legend>BIT Meet</legend>
-		
-		<div class="field">
-			<div class="label">
-				<p>Please enter your name</p>
+	<div class="head">Registration Form</div>
+	<div class="form">		
+		<form action='process.php' method='POST'>				
+			<div class="leftcolumn">
+				<div class="label">
+					<p>First Name:<input type="text" name="name" value="" size="30" style="font-size:14pt; height:25px"></p>
+					
+					<p>Address:<textarea name='address' rows='1' cols='24' style="font-size:14pt; height:25px"></textarea></p>
+					
+					<p>Password:<input type="text" name="password" value="" size="30" style="font-size:14pt; height:25px"></p>	
+					
+					<p>Favourite Website:<input type="url" size="30" style="font-size:14pt; height:25px"></p>
+				</div>							
+			</div>	
+			<div class="rightcolumn">
+				<div class="label">
+					<p>Image:<input type="image"></p>				
 				
-				<p>Please enter your password</p>
+					<p>Date of Birth:<input type="date" name="dob"></p>
+					
+					<p>Programming Ability:<input type="range" name="prog"></p>
 				
-				<p>Please enter your Address</p>
-			</div>
-			<div class="data">
-				<p><input type="text" name="name" value="" size="40"></p>
-				
-				<p><input type="text" name="password" value="" size="40"></p>
-												
-				<textarea name='address' rows='6' cols='40'>
-					Enter Comments Here
-				</textarea>
-
-			</div>
-		</div>		
-		
-		</fieldset>
-		</form>
+					<p>Colour Scheme:<input type="color" name="colorScheme"></p>	
+					
+					
+								
+				</div>	
+			</div>			
+		</form>		
+	</div>
+	<div class="foot">
+		<input type="submit" name="submitted" value="Submit" style="font-size:14pt; height:30px"> 
+		<input type="reset" value="Reset" style="font-size:14pt; height:30px">	
 	</div>
 </body>
 </html>
