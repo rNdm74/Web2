@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+</head>
+<body>
+<?php
+	$br = "<br />";
+
+	<td class="image"><img src="angryDino.gif" alt="Adam Charlton"/></td>
+
+?>
+</body>
+</html>

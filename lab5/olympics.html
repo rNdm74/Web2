@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Summer Olympics Quiz</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div class="form">
+	<form action='process.php' method='POST'>
+		<fieldset>
+			<legend>Quiz Items</legend>
+			<p>How many countries are in the 2012 Olympics?<input type="text" name="firstName" value="" size="30"></p>
+			
+			<p>The first medal went to which sport?</p>
+			<input type="radio" name="firstMedal" value="judo"> Judo <br> 
+			<input type="radio" name="firstMedal" value="shooting"> Shooting <br>
+			<input type="radio" name="firstMedal" value="swimming"> Swimming <br> 
+			<input type="radio" name="firstMedal" value="weight"> Weight <br>
+			
+			<p>Which of these countries are not in the top 3 medal count?</p>
+			<input type="radio" name="countries" value="china"> <img src="china.gif" alt="China"/> 
+			<input type="radio" name="countries" value="italy"> <img src="italy.gif" alt="Italy"/> 
+			<input type="radio" name="countries" value="russia"> <img src="russia.gif" alt="Russia"/>  
+			<input type="radio" name="countries" value="usa"> <img src="united-states.gif" alt="USA"/><br> 
+			
+			<p>Where were the last four Olympic games played?</p>
+			<input type="checkbox" name="atlanta" value="Atlanta"> Atlanta <br>
+			<input type="checkbox" name="athens" value="Athens"> Athens <br>
+			<input type="checkbox" name="barcelona" value="Barcelona"> Barcelona <br>
+			<input type="checkbox" name="beijing" value="Beijing"> Beijing <br>
+			<input type="checkbox" name="sydney" value="Sydney"> Sydney <br>
+			
+			<p>Which game is no longer played in the Olympics?</p>
+			<select name="Please select a sport">
+				<option value="noSelection">Please select a sport</option>
+				<option value="baseBall">BaseBall</option>
+				<option value="beachVolleyBall">Beach Volley Ball</option>
+				<option value="bmx">BMX</option>
+				<option value="handBall">HandBall</option>			
+			</select>
+				
+		</fieldset>
+		<input type="submit" name="submitted" value="Submit"> <input type="reset" value="Reset"><br>
+	</form>
+</div>
+
+
+</body>
+</html>

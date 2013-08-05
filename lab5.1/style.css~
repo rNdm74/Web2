@@ -1,0 +1,19 @@
+.form{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.field{
+	width: 600px;
+}
+
+.label{
+	width: 300px;
+	
+	
+}
+
+.data{
+	width: 300px;
+}
