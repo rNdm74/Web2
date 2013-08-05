@@ -80,7 +80,7 @@ caption {
 {	
 	height:20px;
 	width: 100%;
-	padding:0px;
+	padding:5px;
 	background-color:#274ba3;
 	box-shadow: 0px 2px 5px #7E9353;
 	border-bottom-right-radius:5px;
