@@ -20,35 +20,43 @@
 			<div class="rightcolumn">
 				<div class="label">
 					<p>Address:</p>
-					<textarea name='address' rows='4' cols='30' style="font-size:14pt; height:75px"></textarea>
-					
-					<p>Date of Birth:</p><input type="date" name="dob">					
-
-					
-					<p>Image:</p><input type="file" name="Upload" type="image/*">				
-				
-					
-					
-					<p>Programming Ability:</p><input type="range" name="prog">
-				
-					<p>Colour Scheme:</p><input type="color" name="colorScheme">
-								
+					<textarea name='address' rows='4' cols='25' style="font-size:14pt; height:75px"></textarea>													
 				</div>	
 			</div>
 			<div class="leftcolumn">
 				<div class="label">					
 					<p>Password:</p><input type="text" name="password" value="" size="35" style="font-size:14pt; height:25px">						
-					<p>Favourite Website:</p><input type="url" size="35" style="font-size:14pt; height:25px">					
+										
 				</div>							
 			</div>
 			<div class="rightcolumn">
 				<div class="label">										
-					<p>Date of Birth:</p><input type="date" name="dob">
-					<p>Image:</p><input type="file" name="Upload" type="image/*">
-					<p>Programming Ability:</p><input type="range" name="prog">				
-					<p>Colour Scheme:</p><input type="color" name="colorScheme">								
+					<p>Date of Birth:</p><input type="date" name="dob">													
 				</div>	
-			</div>			
+			</div>
+			
+			<div class="leftcolumn">
+				<div class="label">	
+					<p>Favourite Website:</p><input type="url" size="35" style="font-size:14pt; height:25px">				
+				</div>							
+			</div>
+			<div class="rightcolumn">
+				<div class="label">	
+					<p>Image:</p><input type="file" name="Upload" type="image/*">						
+				</div>	
+			</div>
+			
+			<div class="leftcolumn">
+				<div class="label">	
+					<p>Programming Ability:</p><input type="range" name="prog" min="1" max="100" value="0">				
+				</div>							
+			</div>
+			<div class="rightcolumn">
+				<div class="label">									
+					<p>Colour Scheme:</p><input type="color" name="colorScheme">							
+				</div>	
+			</div>
+						
 		</form>		
 	</div>
 	<div class="foot">

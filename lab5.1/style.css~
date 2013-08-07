@@ -19,16 +19,12 @@ input{
 	margin-bottom: 20px;
 }
 
-.form{
-	
+.form{	
 	width: 800px;
 	height: 600px;
 	margin-left: auto;
 	margin-right: auto;
  	margin-top: 0px;
- 	
- 	/*box-shadow: 0px 1px 5px #7E9353;*/
- 	box-shadow: 0px 1px 2px #7E9353;
 }
 
 .head{
@@ -46,7 +42,7 @@ input{
 	
 	text-align: center;
 	
-	box-shadow: 0px 1px 2px #7E9353;
+	box-shadow: 0px 0px 1px #7E9353;
 }
 
 .foot{
@@ -54,17 +50,18 @@ input{
 	width: 760px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -80px;
+	margin-top: 100px;
 
-	padding-top: 50px;
-	padding-bottom: 50px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-top: 150px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 
-	box-shadow: 0px 1px 2px #7E9353;
+	
 	border-bottom-left-radius:10px;
  	border-bottom-right-radius:10px;
-	
+ 	
+ 	box-shadow: 0px 0px 1px #7E9353;	
 }
 
 .leftcolumn{	
@@ -78,9 +75,7 @@ input{
 	padding-left: 20px;
 	padding-right: 20px;
 	
-	
- 	
-
+	box-shadow: 0px 0px 1px #7E9353;	
 }
 
 .rightcolumn{
@@ -91,8 +86,8 @@ input{
 	
 	padding-top: 20px;
 	padding-right: 50px;	
- 	
 	
+	box-shadow: 0px 0px 1px #7E9353;	
 }
 
 .label{
