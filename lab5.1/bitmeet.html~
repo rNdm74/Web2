@@ -6,32 +6,47 @@
 <title>BIT Meet</title>
 </head>
 <body>
-	<div class="head"></div>
+	<div class="head"><h1>Registration form</h1></div>
 	<div class="form">		
 		<form action='process.php' method='POST'>				
 			<div class="leftcolumn">
 				<div class="label">
-					<p>First Name:<input type="text" name="name" value="" size="30" style="font-size:14pt; height:25px"></p>
+					<p>Name:</p>
+					<input type="text" name="name" value="Firstname" size="35" style="font-size:14pt; height:25px">
+					<input type="text" name="name" value="Lastname" size="35" style="font-size:14pt; height:25px">
 					
-					<p>Address:<textarea name='address' rows='1' cols='24' style="font-size:14pt; height:25px"></textarea></p>
-					
-					<p>Password:<input type="text" name="password" value="" size="30" style="font-size:14pt; height:25px"></p>	
-					
-					<p>Favourite Website:<input type="url" size="30" style="font-size:14pt; height:25px"></p>
 				</div>							
 			</div>	
 			<div class="rightcolumn">
 				<div class="label">
-					<p>Image:<input type="image"></p>				
+					<p>Address:</p>
+					<textarea name='address' rows='4' cols='30' style="font-size:14pt; height:75px"></textarea>
+					
+					<p>Date of Birth:</p><input type="date" name="dob">					
+
+					
+					<p>Image:</p><input type="file" name="Upload" type="image/*">				
 				
-					<p>Date of Birth:<input type="date" name="dob"></p>
 					
-					<p>Programming Ability:<input type="range" name="prog"></p>
+					
+					<p>Programming Ability:</p><input type="range" name="prog">
 				
-					<p>Colour Scheme:<input type="color" name="colorScheme"></p>	
-					
-					
+					<p>Colour Scheme:</p><input type="color" name="colorScheme">
 								
+				</div>	
+			</div>
+			<div class="leftcolumn">
+				<div class="label">					
+					<p>Password:</p><input type="text" name="password" value="" size="35" style="font-size:14pt; height:25px">						
+					<p>Favourite Website:</p><input type="url" size="35" style="font-size:14pt; height:25px">					
+				</div>							
+			</div>
+			<div class="rightcolumn">
+				<div class="label">										
+					<p>Date of Birth:</p><input type="date" name="dob">
+					<p>Image:</p><input type="file" name="Upload" type="image/*">
+					<p>Programming Ability:</p><input type="range" name="prog">				
+					<p>Colour Scheme:</p><input type="color" name="colorScheme">								
 				</div>	
 			</div>			
 		</form>		

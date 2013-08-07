@@ -1,14 +1,26 @@
 body{
-	font-family: Courier;
+	font-family: sans-serif;
 	font-weight: bold;
+	background-color: aliceblue;
+}
+
+h1{
+	text-shadow: 0px 1px 1px #4d4d4d;
+   color: antiquewhite;
+   font: 80px Helvetica;
 }
 
 p{		
 	font-size: 14pt;
-	padding: 20px;
+	padding: 10px;
+}
+
+input{
+	margin-bottom: 20px;
 }
 
 .form{
+	
 	width: 800px;
 	height: 600px;
 	margin-left: auto;
@@ -16,32 +28,38 @@ p{
  	margin-top: 0px;
  	
  	/*box-shadow: 0px 1px 5px #7E9353;*/
+ 	box-shadow: 0px 1px 2px #7E9353;
 }
 
 .head{
-	width: 760px;
-	height: 50px;
+	background-color: cornflowerblue;	
+	
+	width: 800px;
+	height: 150px;
 	
 	margin-top: -10px;
 	margin-left: auto;
 	margin-right: auto;
 	
-	padding: 30px;
+	padding-top: 40px;
+	padding-bottom: 10px;
 	
-	text-align: justify;;
-	top: auto;
-	font-size: 24pt;
+	text-align: center;
 	
 	box-shadow: 0px 1px 2px #7E9353;
 }
 
 .foot{
+	background-color: cornflowerblue;
 	width: 760px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: -80px;
 
-	padding: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
 
 	box-shadow: 0px 1px 2px #7E9353;
 	border-bottom-left-radius:10px;
@@ -50,9 +68,10 @@ p{
 }
 
 .leftcolumn{	
+	background-color: white;
 	float: left;
-	width: 400px;
-	height: 500px;
+	width: 360px;
+	height: 200px;
 	
 	padding-top: 20px;
 	padding-bottom: 0px;	
@@ -61,18 +80,19 @@ p{
 	
 	
  	
-	box-shadow: 0px 1px 2px #7E9353;
+
 }
 
-.rightcolumn{	
+.rightcolumn{
+	background-color: white;	
 	float: right;
-	width: 310px;
-	height: 465px;
+	width: 350px;
+	height: 200px;
 	
-	padding-top: 55px;
+	padding-top: 20px;
 	padding-right: 50px;	
  	
-	box-shadow: 0px 1px 2px #7E9353;
+	
 }
 
 .label{
