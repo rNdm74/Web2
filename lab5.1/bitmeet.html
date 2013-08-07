@@ -6,7 +6,7 @@
 <title>BIT Meet</title>
 </head>
 <body>
-	<div class="head"><h1>Registration form</h1></div>
+	<div class="head"><img src="logo.png" alt="logo"></div>
 	<div class="form">		
 		<form action='process.php' method='POST'>				
 			<div class="leftcolumn">
@@ -14,7 +14,6 @@
 					<p>Name:</p>
 					<input type="text" name="name" value="Firstname" size="35" style="font-size:14pt; height:25px">
 					<input type="text" name="name" value="Lastname" size="35" style="font-size:14pt; height:25px">
-					
 				</div>							
 			</div>	
 			<div class="rightcolumn">
@@ -25,8 +24,7 @@
 			</div>
 			<div class="leftcolumn">
 				<div class="label">					
-					<p>Password:</p><input type="text" name="password" value="" size="35" style="font-size:14pt; height:25px">						
-										
+					<p>Password:</p><input type="text" name="password" value="" size="35" style="font-size:14pt; height:25px">
 				</div>							
 			</div>
 			<div class="rightcolumn">
@@ -34,7 +32,6 @@
 					<p>Date of Birth:</p><input type="date" name="dob">													
 				</div>	
 			</div>
-			
 			<div class="leftcolumn">
 				<div class="label">	
 					<p>Favourite Website:</p><input type="url" size="35" style="font-size:14pt; height:25px">				
@@ -42,21 +39,24 @@
 			</div>
 			<div class="rightcolumn">
 				<div class="label">	
-					<p>Image:</p><input type="file" name="Upload" type="image/*">						
+					<p>Image:</p><input type="file" name="Upload" type="/image/*">						
 				</div>	
-			</div>
-			
+			</div>			
 			<div class="leftcolumn">
 				<div class="label">	
-					<p>Programming Ability:</p><input type="range" name="prog" min="1" max="100" value="0">				
+					<p>Programming Ability:</p>					
+					<div class="slider">
+						Novice
+						<input type="range" name="prog" min="1" max="100" value="0">
+						Expert
+					</div>									
 				</div>							
 			</div>
 			<div class="rightcolumn">
 				<div class="label">									
 					<p>Colour Scheme:</p><input type="color" name="colorScheme">							
 				</div>	
-			</div>
-						
+			</div>						
 		</form>		
 	</div>
 	<div class="foot">
