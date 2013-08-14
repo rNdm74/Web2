@@ -16,7 +16,10 @@
 			{
 				processForm();
 			}
-		//confirm 
+			else if(isset($_POST['confirm']))
+			{
+				confirmForm();
+			} 
 			else
 				//hasn’t yet been submitted, display the form
 			{
@@ -48,11 +51,13 @@
 					     			</tr>");							
 							}
 						}
-						
-			     		echo("
-			     			<tr>
-			     			<td>$field</td><td>$value</td>
-			     			</tr>");
+						else
+						{
+				     		echo("
+				     			<tr>
+				     			<td>$field</td><td>$value</td>
+				     			</tr>");
+			     		}
 					}
 				}
 			
@@ -74,7 +79,9 @@
 				$cost += sizeof($_POST['toppings']);
 				
 				echo("
-					<form action = '$self' method='POST'>	
+										
+					<form action = '$self' method='POST'>
+					<input type='hidden' name='order' value='$cost'>	
 					<p>Total Cost is $$cost</p>								
 			  		<input type='submit' name='cancel' value = 'Cancel Order'>
 			  		<input type='submit' name='confirm' value = 'Confirm Order'>
@@ -102,6 +109,8 @@
 				  <input type='checkbox' name='toppings[]' value='capsicum'> Capsicum <br>
 				  <input type='checkbox' name='toppings[]' value='olives'> Olives <br>
 				  <input type='checkbox' name='toppings[]' value='anchovies'> Anchovies <br>
+				  
+				  
 		
 				  <p>Delivery Address: 
 				  <input type='text' name='address'>
@@ -109,7 +118,29 @@
 				  <input type='submit' name='submit' value = 'Place Order'>
 				  </fieldset>
 				  </form>");
-			}		
+			}	
+			
+			function confirmForm() 
+			{
+				$self = htmlentities($_SERVER['PHP_SELF']);
+				
+				$confirmCost = $_POST['order'];
+				
+				echo("<form action = '$self' method='POST'>
+				  <fieldset>
+					<legend>Order Complete</legend>
+		
+				  <p>You order is being delivered.</p>
+				  
+				  <p>Thank you for your order.</p>
+
+				  <p>Have ready your $confirmCost dollars</p>
+				  
+				  <br>
+				  <input type='submit' name='cancel' value = 'New Order'>
+				  </fieldset>
+				  </form>");
+			}	
 		?>
 	</body>
 </html>
