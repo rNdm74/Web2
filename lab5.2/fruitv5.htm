@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Form Processing</title>
+	 <meta charset="UTF-8">
+	 <style type = "text/css">
+	body
+	{
+		background-color:sandybrown;
+		padding-left:10px;
+	}
+	fieldset
+	{
+		padding:10px;
+	}
+
+		</style>
+	</head>
+	<body >
+	<h1>Small Quiz</h1>
+
+		<form action = 'process.php' method='POST'>
+			<fieldset>
+			<legend>Fruity questions</legend>
+
+		<p>Select a fruit:</p>
+		<input type = 'checkbox' name='fruit[]' value = 'apple'>apple<br>
+		<input type = 'checkbox' name='fruit[]' value = 'peach'>peach<br>
+		<input type = 'checkbox' name='fruit[]' value = 'orange'>orange<br>
+
+		<p>Your favourite vegetable is: 
+		<input type='text' name='vegetable'>
+		<br>
+		<input type='submit' name='submit' value = 'Submit'>
+		</fieldset>
+		</form>
+	</body>
+</html>
